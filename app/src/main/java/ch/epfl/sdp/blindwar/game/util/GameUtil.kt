@@ -217,7 +217,55 @@ object GameUtil {
         REV_PLAYLIST,
         "",
         URL_PREVIEW_TUTORIAL,
+        Difficulty.EXTREME
+    )
+
+    //to del
+    private val hiphopPlaylist = LocalPlaylist(
+        "tutorial",
+        "Hip hop",
+        "BlindWar",
+        arrayListOf(Genre.RAP),
+        REV_PLAYLIST,
+        "https://i.scdn.co/image/ab67706f0000000317f5a91128f800d0223948cd",
+        URL_PREVIEW_TUTORIAL,
+        Difficulty.MEDIUM
+    )
+
+    //to del
+    private val classicPlaylist = LocalPlaylist(
+        "tutorial",
+        "Classic Rock",
+        "BlindWar",
+        arrayListOf(Genre.ROCK),
+        REV_PLAYLIST,
+        "https://i.scdn.co/image/ab67616d0000b27311b8f61cc557b8f1a3ea1d6e",
+        URL_PREVIEW_TUTORIAL,
+        Difficulty.MEDIUM
+    )
+
+    //to del
+    private val housePlaylist = LocalPlaylist(
+        "tutorial",
+        "House",
+        "BlindWar",
+        arrayListOf(Genre.HOUSE),
+        REV_PLAYLIST,
+        "https://i.scdn.co/image/ab67706c0000bebbb27759f3adcf3943b417d62c",
+        URL_PREVIEW_TUTORIAL,
         Difficulty.DIFFICULT
+    )
+
+    //to del
+    private val partyPlaylist = LocalPlaylist(
+        "tutorial",
+        "Party",
+        "BlindWar",
+        arrayListOf(Genre.DANCE),
+        REV_PLAYLIST,
+        "https://i.scdn.co/image/ab67706c0000bebb6c5db53da7585761f71553ae",
+        URL_PREVIEW_TUTORIAL,
+        Difficulty.EASY
     )
 
     private val tutorialPlaylist = LocalPlaylist(
@@ -259,7 +307,7 @@ object GameUtil {
         Difficulty.EASY
     )
 
-    val BASE_PLAYLISTS = arrayListOf(tutorialPlaylist, testingPlaylist, reversePlaylist)
+    val BASE_PLAYLISTS = arrayListOf(tutorialPlaylist, testingPlaylist, hiphopPlaylist, classicPlaylist, housePlaylist, partyPlaylist, reversePlaylist)
 
     val gameInstanceSolo = GameInstance(gameConfig, masterPlaylist, GameFormat.SOLO)
     val gameInstanceMulti = GameInstance(gameConfig, masterPlaylist, GameFormat.MULTI)

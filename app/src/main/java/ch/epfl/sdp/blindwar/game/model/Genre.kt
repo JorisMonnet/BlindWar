@@ -7,5 +7,8 @@ enum class Genre {
     POP,
     RAP,
     CLASSIC,
-    RNB
+    RNB,
+    ROCK,
+    HOUSE,
+    DANCE
 }

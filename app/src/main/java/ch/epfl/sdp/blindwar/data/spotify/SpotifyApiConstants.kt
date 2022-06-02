@@ -5,9 +5,9 @@ import android.util.Base64
 object SpotifyApiConstants {
     /** Credentials constants **/
     private const val VALUE = "66f4e3c14d6e425"
-    private const val VALUE_2 = "5bb832a9b0724abe"
+    private const val VALUE_2 = "19a77b5d1e0a4142"
     private const val VALUE_3 = "caed973ba62bb2077"
-    private const val VALUE_4 = "b53af1ffceb29a16"
+    private const val VALUE_4 = "ab2ec16ecea8bb28"
     const val AUTH_TYPE = "client_credentials"
 
     fun credentialsEncoding(): String {
